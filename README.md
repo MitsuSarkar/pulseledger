@@ -2,57 +2,110 @@ PulseLedger is a full-stack financial dashboard designed to track Indian stocks 
 
 It combines:
 
-📊 Portfolio tracking
+# 📊 Portfolio tracking
+
 📡 Live market data
+
 📰 Stock-specific news
+
 🏦 Ownership insights (FII/DII)
+
 💻 Desktop-ready app (Electron EXE)
 
 Built as a production-style project, it simulates tools used in trading desks and investment analysis workflows.
 
-✨ Features
+
+# ✨ Features
+
 📊 Portfolio & Watchlist
+
 Add NSE/BSE stocks dynamically
+
 Track quantity, average price
+
 Real-time P&L calculation
+
 Portfolio-level metrics:
+
 Total value
+
 Net profit/loss
+
 % returns
+
 📡 Live Market Data
+
 Real-time stock prices via Yahoo Finance API
+
 Metrics included:
+
 Current price
+
 Day low / high
+
 52-week range
+
 Volume
+
 30-day return
-📉 Interactive Charts
+
+# 📉 Interactive Charts
+
 Historical price data
+
 Clean visual charts using Recharts
+
 Supports multiple time ranges
-📰 News Integration
+
+# 📰 News Integration
+
 Latest news for selected stock
+
 Google News RSS integration
+
 Clickable external sources
-🏦 Ownership Signals (FII / DII)
+
+# 🏦 Ownership Signals (FII / DII)
+
 Institutional holding breakdown:
+
 Promoters
+
 FII
+
 DII
+
 Public
+
 Quarterly trend indicators
-🎨 Modern UI
+
+# 🎨 Modern UI
+
 Dark / Light mode toggle
+
 Bento grid layout
+
 Neo-brutalism-inspired design
+
 Clean financial dashboard aesthetics
-💻 Desktop Application
+
+# 💻 Desktop Application
+
 Packaged using Electron
+
 Runs as a standalone .exe
+
 No browser required
+
 Backend + frontend bundled
-🖼️ Screenshots
+
+# 🖼️ Screenshots
+<img width="1903" height="1029" alt="3" src="https://github.com/user-attachments/assets/53cee6d4-bbad-47b2-91ca-6df1e698937b" />
+
+<img width="1902" height="1029" alt="image" src="https://github.com/user-attachments/assets/64f87d51-a32a-4603-b9ec-06589b362c53" />
+<img width="1905" height="1027" alt="1" src="https://github.com/user-attachments/assets/c93555e1-07ea-431c-95e8-dd257c4a9d15" />
+<img width="1903" height="1022" alt="2" src="https://github.com/user-attachments/assets/f93cc3b5-cbbd-4ab3-a830-3fee0b161112" />
+
 
 Dashboard Overview
 
@@ -63,61 +116,109 @@ Stock Details Panel
 News & Ownership Signals
 
 🛠️ Tech Stack
+
 Frontend
+
 React (Vite)
+
 CSS (custom styling)
+
 Recharts (data visualization)
+
 Backend
+
 Node.js
+
 Express.js
+
 Yahoo Finance (chart API)
+
 Google News RSS
+
 Desktop
+
 Electron
+
 Electron Builder
-⚙️ Installation (Development)
+
+# ⚙️ Installation (Development)
 
 git clone https://github.com/your-username/pulseledger.git
+
 cd pulseledger
+
 npm install
+
 npm run dev
 
-🖥️ Run Desktop App (Dev Mode)
+
+# 🖥️ Run Desktop App (Dev Mode)
+
 npm start
-📦 Build Windows EXE
+
+# 📦 Build Windows EXE
+
 npm run dist:win
+
 Output:
+
 /release/PulseLedger.exe
-📁 Project Structure
+
+# 📁 Project Structure
+
 pulseledger/
+
 ├── client/        # React frontend
 ├── server/        # Express backend
 ├── electron/      # Desktop wrapper
 ├── dist/          # Built frontend
 ├── release/       # Final EXE build
-⚠️ Notes
+
+# ⚠️ Notes
+
 Market data is sourced from public Yahoo endpoints (best-effort accuracy)
+
 Ownership data is currently simulated (can be replaced with real APIs)
+
 Internet connection required for live data
-🎯 Use Cases
+
+# 🎯 Use Cases
+
 Retail investors tracking portfolios
+
 Students learning financial analytics
+
 Demonstrating full-stack + finance projects
+
 Resume/portfolio project for:
+
 Finance roles
+
 Data roles
+
 FinTech roles
-🔥 Future Improvements
+
+# 🔥 Future Improvements
+
 🔔 Price alerts
+
 📈 Advanced indicators (RSI, MACD)
+
 ☁️ Cloud sync
+
 📱 Mobile version
+
 🧠 AI-based insights
-👤 Author
+
+# 👤 Author
+
 Sumit Sarkar
 
+
 GitHub: https://github.com/MitsuSarkar
+
 LinkedIn: https://www.linkedin.com/in/mitsusarkar
+
 ⭐ If you like this project
 
 Give it a star ⭐ helps a lot!
