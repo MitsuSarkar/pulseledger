@@ -1,0 +1,1 @@
+const { startServer } = require("./app.cjs"); startServer(4000);

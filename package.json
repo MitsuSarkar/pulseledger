@@ -1,0 +1,54 @@
+{
+  "name": "pulseledger",
+  "version": "1.0.3",
+  "private": true,
+  "main": "electron/main.cjs",
+  "description": "PulseLedger offline desktop app with bundled frontend and backend.",
+  "author": "OpenAI",
+  "scripts": {
+    "dev:web": "vite",
+    "dev:server": "node server/index.js",
+    "dev": "concurrently -k \"npm run dev:web\" \"npm run dev:server\"",
+    "build:web": "vite build",
+    "start": "electron .",
+    "dist:win": "npm run build:web && set CSC_IDENTITY_AUTO_DISCOVERY=false && electron-builder --win portable --config.win.signAndEditExecutable=false",
+    "clear:builder-cache": "node scripts-clear-cache.cjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^37.2.0",
+    "electron-builder": "^25.1.8",
+    "vite": "^6.4.2"
+  },
+  "build": {
+    "appId": "com.sumit.pulseledger",
+    "productName": "PulseLedger",
+    "directories": {
+      "output": "release"
+    },
+    "asar": true,
+    "files": [
+      "electron/**/*",
+      "server/**/*",
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false,
+      "verifyUpdateCodeSignature": false
+    }
+  }
+}
